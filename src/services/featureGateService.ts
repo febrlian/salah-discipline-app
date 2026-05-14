@@ -17,9 +17,6 @@ export const featureGateService = {
       }
       if (fallback) {
         fallback();
-      } else {
-        Alert.alert('Premium Feature', `Access denied to premium feature: ${featureKey}`);
-        // Optionally trigger a premium modal here
       }
     }) as T;
   }
